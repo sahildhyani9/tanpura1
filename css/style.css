@@ -6821,6 +6821,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 6, E:/172 Etrain Education/172_Etrain_Education_html/sass/_contact.scss */
 .contact-info__icon {
+  font-size: 24px;
+  color: #f9b700;
   margin-right: 20px;
 }
 
@@ -6833,8 +6835,8 @@ h1, h2, h3, h4, h5, h6 {
 /* line 17, E:/172 Etrain Education/172_Etrain_Education_html/sass/_contact.scss */
 .contact-info .media-body h3 {
   font-size: 16px;
-  margin-bottom: 0;
-  font-size: 16px;
+  margin-bottom: 5px;
+  font-size: 18px;
   color: #2a2a2a;
 }
 
@@ -6845,6 +6847,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 29, E:/172 Etrain Education/172_Etrain_Education_html/sass/_contact.scss */
 .contact-info .media-body p {
+  margin-bottom: 0;
   color: #8a8a8a;
 }
 
@@ -6898,6 +6901,50 @@ h1, h2, h3, h4, h5, h6 {
 .form-contact textarea {
   border-radius: 12px;
   height: 100% !important;
+}
+
+/* Improve spacing and sizing for contact section to match map height */
+@media (min-width: 992px) {
+  .contact-primary {
+    min-height: 480px; /* match map height */
+    display: flex;
+    align-items: center;
+  }
+  .contact-primary {
+    gap: 60px; /* horizontal gap between columns */
+  }
+  .contact-primary > .col-lg-9 {
+    padding-right: 100px; /* larger gutter so form doesn't feel cramped */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertically center the form fields */
+  }
+  .contact-primary > .col-lg-3 {
+    padding-left: 80px;
+  }
+  .form-contact .form-group {
+    margin-bottom: 28px; /* more vertical breathing room */
+  }
+  .form-contact .form-control {
+    height: 56px; /* taller inputs for visual balance */
+    padding-left: 20px;
+  }
+  .form-contact textarea.form-control {
+    min-height: 360px; /* taller textarea to spread out */
+    height: auto !important;
+    padding: 16px;
+  }
+  .contact-info {
+    margin-bottom: 36px;
+  }
+  .contact-info__icon {
+    font-size: 28px;
+    color: #ff663b;
+    display: inline-block;
+    width: 48px;
+    text-align: center;
+    margin-right: 18px;
+  }
 }
 
 @media (max-width: 576px) {

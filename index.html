@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Calendly widget CSS (for popup styling) -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 </head>
 
 <body>
@@ -65,7 +67,7 @@
                                     <a class="nav-link" href="contact.html">Contact</a>
                                 </li>
                                 <li class="d-none d-lg-block">
-                                    <a class="btn_1" href="#">Get a Quote</a>
+                                    <a class="btn_1" href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/sahil9dhyani'}); return false;" >Schedule Demo Class</a>
                                 </li>
                             </ul>
                         </div>
@@ -290,7 +292,7 @@
                     <div class="class-type">
                         <div class="card">
                             <a href="online.html">
-                            <img src="img/blog/blog_1.png" class="card-img-top" alt=""></a>
+                            <img src="img/classes/class_1.png" class="card-img-top" alt=""></a>
                             <div class="card-body">                                
                                 <a href="online.html">
                                     <h5 class="card-title">Online Classes</h5>
@@ -308,7 +310,7 @@
                     <div class="class-type">
                         <div class="card">
                             <a href="offline.html">
-                            <img src="img/blog/blog_2.png" class="card-img-top" alt="blog">
+                            <img src="img/classes/class_2.png" class="card-img-top" alt="blog">
                             <div class="card-body">                                
                                 <a href="offline.html">
                                     <h5 class="card-title">Offline Classes</h5>
@@ -324,7 +326,7 @@
                     <div class="class-type">
                         <div class="card">
                             <a href="residency.html">
-                            <img src="img/blog/blog_3.png" class="card-img-top" alt="blog">
+                            <img src="img/classes/class_3.png" class="card-img-top" alt="blog">
                             <div class="card-body">                                
                                 <a href="residency.html">
                                     <h5 class="card-title">Residency</h5>
@@ -687,6 +689,8 @@
     <script src="js/waypoints.min.js"></script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
+    <!-- Calendly widget JS (required for Calendly.initPopupWidget) -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </body>
 
 </html>
